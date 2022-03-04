@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    background-color: azure;
+    display: flex;
+    flex-flow: column wrap;
+    
+
+    
+}
+
+#seccionUno{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+
+#gridSeccionDos{
+    padding: 50px;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "estudios habilidades";
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+#seccionTres{
+    color: black;
+    background-color: white;
+    height: 100vh;
+    padding: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.flexSeccionTres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.tituloProyectos{
+  margin-left: 50px;
+}
+
+.imagenCarrusel{
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.carousel-caption{
+    background-color: rgb(26, 24, 23);
+    border-radius: 20px;
+
+}
+
+#seccionCuatro{
+    font-family: 'Titillium Web', sans-serif;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding: 150px;
+
+}
+
+.card{
+    margin: 10px;
+}
+
+
+
+.infoPag{
+    color: black;
+    position: absolute;    
+}
+
+
+.infoProyecto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 50px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+
+.presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 300%;
+    padding: 50px;
+}
+
+
+
+
+.estudios{
+    grid-area: estudios;
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre{
+    color: rgb(255, 58, 107);
+    margin-right: 20px;
+}
+
+
+.imagenPresentacion{
+    border-radius: 10px;
+    width: 350px;
+}
+
+.parrafo{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+
+#arrow1{
+    color: black;
+    font-size: 200%;
+}
+
+
+#arrow1:hover{
+    cursor: pointer;
+}
+
+#arrow2{
+    color: black;
+    font-size: 200%;
+}
+
+
+#arrow2:hover{
+    cursor: pointer;
+}
+
+#arrow3{
+    color: rgb(90, 0, 0);
+    font-size: 200%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#arrow3:hover{
+    cursor: pointer;
+}
+
+
+.ocultar{
+    display: none;
+}
+
+.titulos{
+    font-size: 400%;
+    margin-bottom: 90px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+
+.habilidades{
+    grid-area: habilidades;
+    display: grid;
+    grid-template-areas: ". . ."
+                        ". . ."
+                        ". . ."
+                        ;
+    flex-flow: row wrap;
+}
+
+.imagenLenguaje{
+    height: 60px;
+    margin: 10px;
+}
+
+
+.linkContacto{
+    font-size: 300%;
+    margin: 40px;
+    text-decoration: none;
+    color: rgb(0, 156, 161);
+}
+
+
+.linksContacto{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid grey;
+
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    margin-bottom: 10px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+.proyecto{
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 100px;
+}

@@ -172,10 +172,20 @@ body{
 
 footer{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-style: italic;
     margin-bottom: 10px;
     font-family: 'Titillium Web', sans-serif;
+}
+
+.ocultar{
+    display: none;
+}
+
+.cv{
+    text-decoration: none;
 }
 
 

@@ -217,9 +217,11 @@ footer{
     }
 
     .presentacion{
-        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
-        font-size: larger;
+        font-size: xx-large;
     }
 
     .titulos{

@@ -30,20 +30,22 @@ body{
 #gridSeccionDos{
     padding: 50px;
     height: 100vh;
+    width: 100vw;
     display: grid;
     grid-template-areas: "estudios habilidades";
     font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
 
-.tituloProyectos{
-  margin-left: 50px;
-}
+
 
 .imagenProyectos{
-    width: 500px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
     border-radius: 10px;
 }
 
@@ -77,7 +79,7 @@ body{
     align-items: center;
     font-family: 'Oswald', sans-serif;
     font-size: 300%;
-    padding: 50px;
+    padding: 30px;
 }
 
 
@@ -165,8 +167,9 @@ body{
 
 
 .proyecto{
-    margin-left: 50vh;
+    width: 600px;
     display: flex;
+    justify-content: space-between;
     margin-bottom: 100px;
 }
 
@@ -192,7 +195,6 @@ footer{
 
 .titulos{
     font-size: 400%;
-    margin-bottom: 90px;
     font-family: 'Oswald', sans-serif;
 
 }
@@ -248,8 +250,8 @@ footer{
 
 
     #seccionTres{
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
     }
 
     .infoProyecto{
@@ -265,8 +267,8 @@ footer{
     }
 
     .imagenProyectos{
-        width: 300px;
-        height: 200px;
+        width: 200px;
+        height: 100px;
     }
 
     #seccionCuatro{

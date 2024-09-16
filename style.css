@@ -121,7 +121,7 @@ body{
 
 
 
-#arrow2{
+#arrowVolver{
     color: rgb(90, 0, 0);
     font-size: 200%;
     position: fixed;
@@ -129,7 +129,7 @@ body{
     right: 20px;
 }
 
-#arrow2:hover{
+#arrowVolver:hover{
     cursor: pointer;
 }
 
@@ -276,7 +276,7 @@ footer{
         height: 100%;
     }
 
-    #arrow2{
+    #arrowVolver{
         display: none;
     }
 

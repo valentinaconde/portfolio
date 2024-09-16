@@ -1,10 +1,10 @@
 let arrow = document.getElementById('arrow')
-let arrow2 = document.getElementById('arrow2')
+let arrowVolver = document.getElementById('arrowVolver')
 
 arrow.onclick = () => {
-    arrow2.classList.remove('ocultar')
+    arrowVolver.classList.remove('ocultar')
 }
 
-arrow2.onclick = () => {
-    arrow2.classList.add('ocultar')
+arrowVolver.onclick = () => {
+    arrowVolver.classList.add('ocultar')
 }

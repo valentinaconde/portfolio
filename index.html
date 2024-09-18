@@ -29,8 +29,34 @@
 
 </head>
 
-
 <body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="navbar-toggler">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#seccionUno">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#gridSeccionDos">Acerca de mi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#seccionTres">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#seccionCuatro">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
     <div id="seccionUno" class="mx-5">
         <div class="presentacion">
             <p class="parrafo" data-aos="fade-down" data-aos-duration="2000">Hola! Mi nombre es <span
@@ -346,6 +372,24 @@
                 <a class="linkContacto" href="mailto:valentinadelpilarconde@gmail.com" target="_blank"><i
                         class="fa-solid fa-envelope"></i></a>
             </div>
+
+            <form id="contact-form" class="d-flex flex-column form">
+                <div class="d-md-flex mt-5">
+                    <div class="mb-3 me-md-4">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
         </div>
     </div>
 
@@ -356,6 +400,30 @@
 
 
 
+    <script>
+        document.getElementById('navbar-toggler').addEventListener('click', function () {
+            var navbarCollapse = document.getElementById('navbarSupportedContent');
+            navbarCollapse.classList.toggle('show');
+        });
+    </script>
+
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+
+        var mailtoLink = 'mailto:valentinadelpilarconde@gmail.com'
+            + '?subject=' + encodeURIComponent('Contacto desde el sitio web')
+            + '&body=' + encodeURIComponent('Nombre: ' + name + '\n'
+            + 'Correo Electrónico: ' + email + '\n'
+            + 'Mensaje: ' + message);
+
+        window.location.href = mailtoLink;
+    });
+</script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

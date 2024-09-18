@@ -312,5 +312,8 @@ footer{
         display: none;
     }
 
+    .form{
+        width: 90vw;
+    }
 
 }

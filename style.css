@@ -57,6 +57,7 @@ body{
     align-items: center;
     height: 100vh;
     padding: 150px;
+    height: fit-content;
 
 }
 

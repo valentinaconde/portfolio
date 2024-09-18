@@ -30,33 +30,35 @@
 </head>
 
 <body>
-    
+
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="navbar-toggler">
+                <button class="navbar-toggler" type="button" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    id="navbar-toggler">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#seccionUno">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#gridSeccionDos">Acerca de mi</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#seccionTres">Proyectos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#seccionCuatro">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#seccionUno">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gridSeccionDos">Acerca de mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#seccionTres">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#seccionCuatro">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
-    
+
     <div id="seccionUno" class="mx-5">
         <div class="presentacion">
             <p class="parrafo" data-aos="fade-down" data-aos-duration="2000">Hola! Mi nombre es <span
@@ -103,8 +105,9 @@
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
                     height="75" alt="typescript logo" />
 
-                <img class="me-4 mt-4 iconImage" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                    height="75" alt="react logo" />
+                <img class="me-4 mt-4 iconImage"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="75"
+                    alt="react logo" />
 
                 <img class="me-4 mt-4 iconImage"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="75"
@@ -130,8 +133,9 @@
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg"
                     height="75" alt="materialui logo" />
 
-                <img class="me-4 mt-4 iconImage" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                    height="75" alt="git logo" />
+                <img class="me-4 mt-4 iconImage"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="75"
+                    alt="git logo" />
 
                 <img class="me-4 mt-4 iconImage"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="75"
@@ -141,8 +145,9 @@
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg"
                     height="75" alt="gitlab logo" />
 
-                <img class="me-4 mt-4 iconImage" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
-                    height="75" alt="linux logo" />
+                <img class="me-4 mt-4 iconImage"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="75"
+                    alt="linux logo" />
 
                 <img class="me-4 mt-4 iconImage"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" height="75"
@@ -152,8 +157,9 @@
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg"
                     height="75" alt="bitbucket logo" />
 
-                <img class="me-4 mt-4 iconImage" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                    height="75" alt="mysql logo" />
+                <img class="me-4 mt-4 iconImage"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="75"
+                    alt="mysql logo" />
 
                 <img class="me-4 mt-4 iconImage"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
@@ -394,7 +400,7 @@
     </div>
 
 
-    <footer>
+    <footer id="seccionCinco">
         <h6>Sitio web creado por <a href="https://github.com/valentinaconde">Valentina</a></h6>
     </footer>
 
@@ -407,23 +413,23 @@
         });
     </script>
 
-<script>
-    document.getElementById('contact-form').addEventListener('submit', function (event) {
-        event.preventDefault();
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
 
-        var name = document.getElementById('name').value;
-        var email = document.getElementById('email').value;
-        var message = document.getElementById('message').value;
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
 
-        var mailtoLink = 'mailto:valentinadelpilarconde@gmail.com'
-            + '?subject=' + encodeURIComponent('Contacto desde el sitio web')
-            + '&body=' + encodeURIComponent('Nombre: ' + name + '\n'
-            + 'Correo Electrónico: ' + email + '\n'
-            + 'Mensaje: ' + message);
+            var mailtoLink = 'mailto:valentinadelpilarconde@gmail.com'
+                + '?subject=' + encodeURIComponent('Contacto desde el sitio web')
+                + '&body=' + encodeURIComponent('Nombre: ' + name + '\n'
+                    + 'Correo Electrónico: ' + email + '\n'
+                    + 'Mensaje: ' + message);
 
-        window.location.href = mailtoLink;
-    });
-</script>
+            window.location.href = mailtoLink;
+        });
+    </script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
